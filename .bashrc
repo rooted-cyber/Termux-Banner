@@ -1,0 +1,25 @@
+echo -e -n "\033[91m Enter your name :- "
+read a
+echo -e "\033[96m"
+echo " Shortcut"
+echo "p	python"
+echo "p2	python2"
+echo "p3	python3"
+echo "f	figlet"
+echo "t	toilet"
+echo "l	lolcat"
+echo "ll	ls--colorful"
+echo "la	ls --colorful2"
+echo
+toilet -f term -F gay -F border $a
+echo
+PS1="\n\n\[\033[91m\]\u\[\033[92m\]@\[\033[93m\]$a \[\033[94m\][\[\033[95m\]\W\[\033[94m\]] \[\033[91m\][\[\033[96m\] $a\[\033[91m\] ]\[\033[92m\] # \[\033[97m\]"
+alias all="apt update:apt upgrade"
+alias p="python"
+alias p2="python2"
+alias p3="python3"
+alias f="figlet"
+alias t="toilet"
+alias l="lolcat"
+alias ll="ls|lolcat"
+alias la="ls | toilet -f term -F gay"
